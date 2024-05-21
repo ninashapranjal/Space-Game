@@ -1,6 +1,5 @@
 import pygame
 import random
-import asyncio
 
 # Initialize Pygame
 pygame.init()
@@ -271,6 +270,6 @@ async def main():
         draw_alien_bullets()
         pygame.display.flip()
         pygame.time.Clock().tick(60)
-        await asyncio.sleep(0)
-asyncio.run(main())
+pygame.quit()
+
 
